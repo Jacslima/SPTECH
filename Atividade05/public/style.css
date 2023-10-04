@@ -1,0 +1,240 @@
+/* 
+* 
+{
+    Muda todas as coisas do site
+}*/
+
+body
+{
+    margin: 0;
+}
+
+
+.header
+{
+    border-bottom: 3px  solid lightskyblue;
+    margin: 0px 0px 3px 0px;
+    background-color: rgb(4, 0, 31);
+}
+
+.header .container
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: lightblue;
+}
+
+
+.header .container ul 
+{
+    width: 400px;
+    list-style: none;
+    display: flex;
+    justify-content:space-between; 
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header a 
+{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+/* Container Padrão */
+.container
+{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.banner
+{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.imagembanner
+{
+    margin-bottom: 15px;
+    height: 340px;
+    position: absolute;
+    right: 80px;
+}
+.banner .container
+{
+
+    align-items: center;
+}
+
+.banner .container h2
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: black;
+    margin: 0;
+    color: rgb(4, 0, 31);
+}
+
+.banner .container p
+{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    width: 300px;
+}
+
+.btnNavegar
+{
+    width: 130px;
+    height: 30px;
+    border-radius: 20px;
+    border: white;
+    outline: none;
+    color: white;
+    background-color: rgb(4, 0, 31);
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btnNavegar:hover
+{
+    background-color: rgb(11, 1, 80);
+}
+
+.social 
+{
+    background-color: lightblue;
+    display: flex;
+}
+
+.social .container
+{
+    justify-content: center;
+}
+
+.box img
+{
+    width: 200px;
+}
+
+.social .container .boxes
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box
+{
+    width: 33%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box p 
+{
+    text-align: center;
+}
+
+.footer
+{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(11, 1, 80);
+}
+.footer .container .version
+{
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.card 
+{
+    width: 30%;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: rgb(4, 0, 31);
+    padding: 50px;
+}
+
+.card h2
+{
+    margin: 0;
+    font-size: 30px;
+}
+
+.formulario 
+{
+    display: flex;
+    height: 90%;
+    width: 90%;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.formulario span
+{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.formulario input
+{
+    border: 2px solid rgb(146, 189, 255);
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    height: 20px;
+
+}
+
+.campo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login .container
+{
+    justify-content: center;
+    height: 500px;
+}
+
+.botao
+{
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 500px;
+    font-size: 19px;
+    color: white;
+    background-color: rgb(4, 0, 31);
+    width: 120px;
+    height: 30px;
+    align-self: center;
+}
