@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>ChartJs</title>
+</head>
+<body style="display: flex;">
+
+    <!-- Tag Canva renderiza/Desenha o gráfico -->
+    <div>
+        <canvas id="myChart-Line" style="position: relative; height:40vh; width:40vw"></canvas>
+    </div>
+    <div>
+        <canvas id="myChart-Bar" style="position: relative; height:40vh; width:40vw"></canvas>
+    </div>
+
+</body>
+
+<script>
+
+    // Pegar as configurações e renderizar na div
+    // Const: Forma de declarar uma variavél. Nada pode mudar o valor dela.  
+    const line = document.getElementById('myChart-Line');
+  
+    new Chart(line, {
+    //  Conteudo do gráfico:
+      type: 'line',
+      data: {
+        // Vetor
+        labels: ['12:00', '13:00', '14:00', '15:00', '16:00', '17:00'],
+        datasets: [{
+          label: 'Temperatura',
+          data: [30, 29, 28, 25, 22, 23],
+          borderWidth: 1,
+          backgroundColor: 'red',
+          borderColor: 'red',
+        },
+
+        {
+          label: 'Umidade',
+          data: [80, 82, 80, 85, 80, 83],
+          borderWidth: 1,
+          backgroundColor: 'blue',
+          borderColor: 'blue',
+        }]
+
+      }
+      
+      ,
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+
+    // Gráfico de barras:
+    const ctx = document.getElementById('myChart-Bar');
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+        datasets: [{
+          label: 'Temperatura Média',
+          data: [22, 24, 27, 23, 20, 18],
+          borderWidth: 1,
+          backgroundColor: 'red',
+          borderColor: 'red',
+        },
+
+        {
+          label: 'Umidade Média',
+          data: [90, 89, 93, 87, 88, 82],
+          borderWidth: 1,
+          backgroundColor: 'blue',
+          borderColor: 'blue',
+        }]
+
+      }
+      
+      ,
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+
+</html>
